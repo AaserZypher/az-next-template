@@ -1,72 +1,57 @@
 import Image from 'next/image';
-import { Geist, Geist_Mono } from 'next/font/google';
-import Footer from '../components/footer';
-import Header from '@/components/header';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
 });
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <Header />
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{' '}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <main className="flex flex-col items-center justify-center p-4">
+      <Head>
+        <title>Home Page - AZ Next Blueprint</title>
+        <meta name="description" content="View my newest work!" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga saepe
+        quaerat numquam mollitia officiis, nobis ipsum doloribus provident,
+        minima suscipit. Molestiae, consequatur in rerum omnis possimus libero
+        provident quasi. Rerum debitis reprehenderit tenetur earum voluptas sint
+        eligendi, saepe at vel vitae quibusdam nam accusantium velit atque
+        nostrum tempora voluptate magnam deserunt quam minima numquam
+        dignissimos cumque eum illum. Illum. Reiciendis dolore alias nesciunt
+        ex, at dignissimos, corrupti totam, odit recusandae debitis sit natus
+        placeat eaque? Perferendis dolorum ex culpa, distinctio hic itaque
+        voluptate vero, numquam, neque nihil molestiae enim. Cupiditate, quia
+        libero! Officia saepe, beatae officiis vel eaque dicta cum voluptate
+        dolores exercitationem esse tempore quod quidem sapiente ipsum! Maxime
+        consequatur atque repellendus rem, nobis repellat. Cum, recusandae unde.
+        Odio, nihil ipsam? Eligendi eum neque beatae maxime possimus accusantium
+        dicta quaerat id modi nobis doloribus eaque aperiam repellendus sed,
+        quis sit! Voluptates hic dignissimos unde natus, maxime eveniet?
+        Inventore! Quasi quibusdam numquam voluptates, architecto deserunt unde
+        saepe placeat veniam dicta nemo magnam porro. Aliquam adipisci
+        accusantium distinctio, fugiat quisquam ipsa inventore ex aut cumque non
+        voluptate tempora. Nihil, dicta? Consequuntur ipsam officia
+        necessitatibus autem eos facilis reiciendis fugiat aspernatur vel
+        numquam minus rerum doloribus cupiditate reprehenderit velit explicabo
+        vero nam quos et, accusamus optio debitis, qui deserunt illum.
+        Consequuntur! In, magnam esse reiciendis vitae illum saepe sunt,
+        veritatis molestias aliquam iste corrupti ea repellat recusandae dolor
+        ullam ad nemo natus necessitatibus sed. Earum magnam maiores possimus
+        aspernatur fugit ab. Fugit voluptates doloribus voluptas. Quis aliquam
+        saepe quibusdam nobis consectetur commodi natus voluptates repellat non
+        laborum minima quos nostrum amet quasi cupiditate similique recusandae
+        doloribus, minus molestias? Voluptate, tenetur quos! Odit cumque
+        necessitatibus nostrum, iste voluptate, neque tempore officiis
+        recusandae quaerat cupiditate quae itaque quam sapiente. Qui maxime
+        minus quaerat nisi adipisci. Aperiam iste quasi recusandae vero impedit
+        inventore sit.
+      </p>
+    </main>
   );
 }

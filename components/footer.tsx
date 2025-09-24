@@ -1,54 +1,39 @@
 import Image from 'next/image';
-const Footer = () => {
+import { Hedvig_Letters_Sans } from 'next/font/google';
+
+const hedvig_sans = Hedvig_Letters_Sans({
+  weight: '400',
+  subsets: ['latin'],
+});
+
+function Footer() {
   return (
-    <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/file.svg"
-          alt="File icon"
-          width={16}
-          height={16}
-        />
-        Learn
-      </a>
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/window.svg"
-          alt="Window icon"
-          width={16}
-          height={16}
-        />
-        Examples
-      </a>
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/globe.svg"
-          alt="Globe icon"
-          width={16}
-          height={16}
-        />
-        Go to nextjs.org →
-      </a>
+    <footer
+      className={`mt-auto flex flex-col w-full items-center justify-center md:flex-row border-t-4 border-azg-1 bg-black p-4 ${hedvig_sans.className}`}
+    >
+      <p className="text-center text-azs-1 tracking-wider">
+        Copyright &copy; {new Date().getFullYear()} Aaser Zypher Solutions
+      </p>
+      <div className="mt-4 md:mt-0 md:ml-20 flex items-center">
+        <span className="text-azs-1 tracking-wide">Powered by </span>
+        <a
+          href="https://nextjs.org/"
+          className="ml-1 flex items-center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+            alt="Next.js Logo"
+            width={72}
+            height={24}
+            priority
+            className="filter invert"
+          />
+        </a>
+      </div>
     </footer>
   );
-};
+}
 
 export default Footer;

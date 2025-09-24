@@ -1,11 +1,55 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@theme {
+  /* Custom text shadows */
+  --text-shadow-sm: 0 1px 2px var(--tw-shadow-color);
+  --text-shadow-md: 2px 2px 4px var(--tw-shadow-color);
+  --text-shadow-lg: 4px 4px 8px var(--tw-shadow-color);
+
+  /* Colors */
+  --color-transparent: transparent;
+  --color-white: #f2ebfb;
+  --color-gray: #e2dada;
+  --color-black: #02010a;
+
+  --color-azp-1: #9d4edd;
+  --color-azp-2: #7b2cbf;
+  --color-azp-3: #5a189a;
+  --color-azp-4: #3c096c;
+  --color-azp-5: #240046;
+
+  --color-azo-1: #ff9e00;
+  --color-azo-2: #ff9100;
+  --color-azo-3: #ff8500;
+  --color-azo-4: #ff7900;
+  --color-azo-5: #ff6d00;
+
+  --color-azg-1: #d4af37;
+  --color-azg-2: #ffd700;
+
+  --color-azs-1: #e1e3e2;
+  --color-azs-2: #b4b8b9;
+  --color-azs-3: #8c9496;
+  --color-azs-4: #7e8488;
+  --color-azs-5: #59666a;
+
+  --color-azb-1: #3c8dc5;
+  --color-azb-2: #116ca5;
+  --color-azb-3: #105585;
+  --color-azb-4: #0b4472;
+  --color-azb-5: #001c32;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
