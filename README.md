@@ -21,4 +21,4 @@ npm install
 npm run dev
 ```
 
-2. Navigate to http://localhost:3000
+3. Navigate to http://localhost:3000
