@@ -14,11 +14,10 @@ Custom-built minimal Next.js starter built for https://aaserzypher.dev.
 1. Clone the repository
 
 2. Run in command line:
+
 ```bash
-cd az-next-template
-rm -rf .git            # This gets rid of the git repo
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 3. Navigate to http://localhost:3000
