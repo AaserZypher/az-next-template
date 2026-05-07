@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+postcss.config.mjs
+yarn.lock
 
 # debug
 npm-debug.log*
