@@ -50,6 +50,28 @@
   --color-azb-3: #105585;
   --color-azb-4: #0b4472;
   --color-azb-5: #001c32;
+
+  --color-loi-1: #6366f1;
+  --color-loi-2: #4f46e5;
+  --color-loi-3: #4338ca;
+
+  --color-lot-50: #ccfbf1;
+  --color-lot-1: #2dd4bf;
+  --color-lot-2: #14b8a6;
+  --color-lot-3: #0d9488;
+
+  --color-los-950: #020617;
+  --color-los-900: #0f172a;
+  --color-los-800: #1e293b;
+  --color-los-700: #334155;
+  --color-los-600: #475569;
+  --color-los-500: #64748b;
+  --color-los-400: #94a3b8;
+  --color-los-300: #cbd5e1;
+  --color-los-200: #e2e8f0;
+  --color-los-100: #f1f5f9;
+  --color-los-50: #f8fafc;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
